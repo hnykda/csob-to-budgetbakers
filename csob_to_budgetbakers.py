@@ -36,7 +36,7 @@ def prepare_logging(level):
 
 def convert(args):
     import pandas as pd
-    with open(args.input, "r") as ifile:
+    with open(args.input, "r", encoding="utf-8") as ifile:
         r = ifile.read()
     import re
 #    pat = r"datum zaúčtování:\s(.*)\sčástka:\s*(.*)\směna:\s*(.*)\s.*\s.*\s.*\s.*\s.*\s.*\s.*\spoznámka:(.*)"
